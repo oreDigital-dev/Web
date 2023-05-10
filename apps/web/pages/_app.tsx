@@ -2,11 +2,14 @@ import type { AppProps } from "next/app";
 import { Provider } from "react-redux";
 import store from "../src/store";
 import "../src/styles/global.css";
+import BaseLayout from "../src/layout/baselayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <Component {...pageProps} />;
+      <BaseLayout>
+        <Component {...pageProps} />;
+      </BaseLayout>
     </Provider>
   );
 }
