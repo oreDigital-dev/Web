@@ -5,7 +5,7 @@ import NotificationCenter from '../../../assets/notificationCenter.png'
 export default function Hero() {
     return (
         <div
-            className="h-[100vh] bg-black-40 pt-52  bg-cover bg-no-repeat relative"
+            className="h-[100vh] bg-black-40 pt-52  bg-cover bg-no-repeat relative bg-black/90"
             style={{ backgroundImage: `url(${HeroBg.src})` }}
         >
             <h1 className='text-6xl text-center text-white font-extrabold '>All your mining company&apos;s <br /> struggles on our head</h1>
