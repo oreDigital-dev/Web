@@ -1,7 +1,7 @@
 import Image from "next/image";
 const ServiceComp = (props) =>{
 
-    // test comment
+
 
     return(
         <div>
