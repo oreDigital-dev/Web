@@ -1,3 +1,3 @@
-export const Button = () => {
-  return <button className="text-lg bg-red-500">boo</button>;
+export const Button = ({ text }: { text: string }) => {
+  return <button className="text-black hover:opacity-90 py-3 px-6 rounded-full bg-brand">{text}</button>;
 };
