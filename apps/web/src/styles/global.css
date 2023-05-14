@@ -11,3 +11,27 @@
 *{
     font-family: 'General Sans', sans-serif;
 }
+
+.scrollable::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  /* Track */
+  .scrollable::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: transparent;
+  }
+  
+  /* Handle */
+  .scrollable::-webkit-scrollbar-thumb {
+    /* background: rgb(242, 242, 242); */
+    /* background: #efedf6; */
+    background: #EEEDF1;
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background: #EEEDF1;
+  }
