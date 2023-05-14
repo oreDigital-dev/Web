@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import DotTexture from '../../../assets/dotTexture.svg'
 
 export default function Team() {
     return (
         <div className="relative px-[20vw] text-center py-48">
-            <p className="text-6xl text-center font-extrabold ">The team behind   </p>
+            <p className="text-6xl text-center font-bold ">The team behind   </p>
             <p className="text-slate-300">Here’s  the services that we offer to you, to ensure both your company’s
                 products and employees security</p>
             <p className="mt-10">

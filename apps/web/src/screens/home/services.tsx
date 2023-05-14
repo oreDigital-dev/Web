@@ -19,7 +19,7 @@ const Services = () => {
         <p className="text-center">{paragraph}</p>
       </div>
 
-      <div className="flex justify-between gap-24 mt-12 border">
+      <div className="flex justify-between gap-24 mt-12">
         <ServiceComp
           image={IncidentOne.src}
           title={header}

@@ -4,7 +4,7 @@ import { ArrowIcon } from "../../../common/icons";
 const ServiceComp = (props) =>{
 
     return(
-        <div className="rounded-lg  w-full border border-b-[#F0F0F0]">
+        <div className="rounded-lg  w-full shadow-lg shadow-[rgba(0, 0, 0, 0.2]">
             <Image src={props.image} alt="Incident Repoting" height={400} width={800} layout="responsive"  className="w-full object-cover"/>
             <div className="px-8 py-4 space-y-4">
                 <p className="font-[600] text-xl leading-relaxed"> {props.title} </p>
