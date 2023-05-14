@@ -8,7 +8,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "brand": "#EFD183"
+                "brand": "#EFD183",
+                "process": "rgba(202, 255, 160, 0.05)",
+                "team" : "rgba(0, 0, 0, 0.01)"
             }
         },
     },
