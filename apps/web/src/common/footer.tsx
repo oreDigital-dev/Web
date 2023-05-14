@@ -10,13 +10,13 @@ const Footer = () => {
         <img src={WhiteLogo.src} alt="" />
         <p className="mt-8 mb-5">Beware of risk, increase security and productivity</p>
         <div className="flex gap-4">
-          <a>
+          <a href="#">
             <img src={Facebook.src} alt=""></img>
           </a>
-          <a>
+          <a href="#">
             <img src={Twitter.src} alt=""></img>
           </a>
-          <a>
+          <a href="#">
             <img src={Linkedin.src} alt=""></img>
           </a>
         </div>
@@ -24,28 +24,28 @@ const Footer = () => {
       <div className="mt-12">
         <p className="font-semibold">Useful links</p>
         <div className="flex flex-col space-y-2 mt-4">
-          <a>Homepage</a>
-          <a>Services</a>
-          <a>Accomodations</a>
-          <a>Car rentals</a>
-          <a>Restaurants</a>
-          <a>Sitemap</a>
+          <a href="#">Homepage</a>
+          <a href="#">Services</a>
+          <a href="#">Accomodations</a>
+          <a href="#">Car rentals</a>
+          <a href="#">Restaurants</a>
+          <a href="#">Sitemap</a>
         </div>
       </div>
       <div className="mt-12">
         <p className="font-semibold">Support</p>
         <div className="flex flex-col space-y-2 mt-4">
-          <a>FAQs</a>
-          <a>Support Center</a>
-          <a>Security</a>
+          <a href="#">FAQs</a>
+          <a href="#">Support Center</a>
+          <a href="#">Security</a>
         </div>
       </div>
       <div className="mt-12">
         <p className="font-semibold">Contact Us</p>
         <div className="flex flex-col space-y-2 mt-4">
-            <a>+234- 70-1449-8006</a>
-            <a>info@murwiza.rw</a>
-            <a>23, Mukamira , Musanze-Rubavu road</a>
+            <a href="#">+234- 70-1449-8006</a>
+            <a href="#">info@murwiza.rw</a>
+            <a href="#">23, Mukamira , Musanze-Rubavu road</a>
         </div>
       </div>
     </div>
