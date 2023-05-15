@@ -7,6 +7,7 @@ import Team from "../src/screens/home/team";
 import Impact from "../src/screens/home/impact";
 import AboutUs from "../src/screens/home/aboutus";
 import Footer from "../src/common/footer";
+import Login from "../src/screens/login/login";
 
 export default function Web() {
   const { data } = useHelloQuery();
@@ -20,6 +21,7 @@ export default function Web() {
       <Impact />
       <AboutUs />
 
+      
       <Footer />
     </div>
   );
