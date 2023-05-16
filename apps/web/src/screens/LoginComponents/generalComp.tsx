@@ -12,7 +12,7 @@ const GeneralComp = ({ number, title }) => {
       </div>
 
       <p className="mt-3">
-        Don't have a workspace? <a className="text-[#E4A400]">Request one</a>
+        Don't have a workspace? <a href="#" className="text-[#E4A400]">Request one</a>
       </p>
     </div>
   );
