@@ -7,6 +7,7 @@ import Team from "../src/screens/home/team";
 import Impact from "../src/screens/home/impact";
 import AboutUs from "../src/screens/home/aboutus";
 import Footer from "../src/common/footer";
+import React from "react";
 
 export default function Web() {
   const { data } = useHelloQuery();

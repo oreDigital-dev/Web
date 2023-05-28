@@ -6,6 +6,7 @@ import Service1 from "../../../assets/service1.png";
 import Service2 from "../../../assets/service2.png";
 import InstallComp from "./components/installComp";
 import Image from "next/image";
+import React from "react";
 
 /* eslint-disable react/no-unescaped-entities */
 const Services = () => {
