@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "ui"
 import { Logo } from "./logo"
+import React from "react"
 
 const navLinks: string[] = ['home', 'services', 'blog', 'about us', 'contact us', 'request workspace']
 export default function Navbar() {

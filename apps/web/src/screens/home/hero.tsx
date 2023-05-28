@@ -2,6 +2,7 @@ import { Button } from 'ui'
 import HeroBg from '../../../assets/00001.png'
 import DotTexture from '../../../assets/dotTexture.svg'
 import NotificationCenter from '../../../assets/notificationCenter.png'
+import React from 'react'
 export default function Hero() {
     return (
         <div
