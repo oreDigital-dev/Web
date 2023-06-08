@@ -16,7 +16,7 @@ const {type} = router.query;
           <h1 className="text-white text-5xl font-bold">Login to your account</h1>
           <p className="text-white pt-8">We aim at making your company develop by maximizing security for both employees and the products</p>
         </div>
-        {loginHome.map((data) => (
+        {companyDetails.map((data) => (
           <div className="h-auto w-1/3 bg-white rounded-lg">
             <div className="text-center pt-12">
               
