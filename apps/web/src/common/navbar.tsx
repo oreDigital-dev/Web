@@ -14,7 +14,9 @@ export default function Navbar() {
                     ))
                 }
             </div>
+            <Link href="/login">
             <button className="text-black hover:opacity-90 py-3 px-6 rounded-full bg-brand">Sign&nbsp;in</button>
+            </Link>
         </nav>
     )
 }
