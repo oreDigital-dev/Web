@@ -19,7 +19,7 @@ export default function Web() {
       <Team />
       <Impact />
       <AboutUs />
-
+      
       <Footer />
     </div>
   );

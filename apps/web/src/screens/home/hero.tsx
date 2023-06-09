@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Button } from 'ui'
 import HeroBg from '../../../assets/00001.png'
 import DotTexture from '../../../assets/dotTexture.svg'
