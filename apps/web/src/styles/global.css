@@ -38,3 +38,9 @@
   .scrollable::-webkit-scrollbar-thumb:hover {
     background: #EEEDF1;
   }
+
+
+
+  .img {
+    background: #7e7e7e40;
+  }
