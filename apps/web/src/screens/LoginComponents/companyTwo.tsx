@@ -1,9 +1,12 @@
-import ButtonComp from "../src/screens/LoginComponents/buttonComp";
-import GeneralComp from "../src/screens/LoginComponents/generalComp";
-import InputComp from "../src/screens/LoginComponents/inputComp";
-import backgroundImage from "../assets/loginBg.png";
+import backgroundImage from "../../../assets/loginBg.png";
+import GeneralComp from "./generalComp";
+import InputComp from "./inputComp";
+import SmallBtnC from "./smallBtnC";
 
-const OperationDetails = () => {
+const CompanyTwo = ({ onNext }) => {
+  const handleNextClick = () => {
+    onNext(); // Call the onNext function to trigger the next step
+  };
   const styles = {
     backgroundImage: `url(${backgroundImage.src})`,
     backgroundSize: "cover", // Optional: this will cover the entire width and height of the div
@@ -15,10 +18,10 @@ const OperationDetails = () => {
         <InputComp title="Mining licence number" inputType="number" />
         <InputComp title="Type of mineral" inputType="text" />
         <InputComp title="Type of ownership" inputType="text" />
-        <ButtonComp text="Next" />
+        <SmallBtnC text="Next" onNext={handleNextClick} />
       </form>
     </div>
   );
 };
 
-export default OperationDetails;
+export default CompanyTwo;
