@@ -3,6 +3,7 @@ import { Button } from 'ui'
 import HeroBg from '../../../assets/00001.png'
 import DotTexture from '../../../assets/dotTexture.svg'
 import NotificationCenter from '../../../assets/notificationCenter.png'
+import Link from 'next/link'
 export default function Hero() {
     return (
         <div
@@ -13,7 +14,7 @@ export default function Hero() {
             <div className="w-fit mx-auto my-10 flex gap-6">
                 <div className='bg-white p-3     rounded-full'>
                     <input type="text" name="" className='px-6 outline-none' id="" placeholder='Company email address' />
-                    <Button text='Request workspace'/>
+                   <Link href={'/companyDetails'}><Button text='Request workspace'/></Link>
                 </div>
                 <button className="text-black hover:opacity-90 py-3 px-10 rounded-full bg-white ">Watch&nbsp;demo</button>
 

@@ -1,8 +1,8 @@
 import NotificationsComp from "../src/screens/notifications/NotificationsComp";
-
+import data from "../data/data";
 const Notifications = () => {
   return(
-    <NotificationsComp company="ZUBA Miners" />
+    <NotificationsComp {...data.companies[0]}/>
   )
 }
 

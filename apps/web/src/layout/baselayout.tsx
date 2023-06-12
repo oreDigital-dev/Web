@@ -11,9 +11,9 @@ export default function BaseLayout({ children }: { children: React.ReactNode }) 
         }
     }, [router])
     return (
-        <>
+        <div className="text-sm">
             {showNav && <Navbar />}
             {children}
-        </>
+        </div>
     )
 }

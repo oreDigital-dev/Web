@@ -17,7 +17,7 @@ const Login = () => {
             both employees and the products.
           </p>
         </div>
-        <form className="rounded-lg w-[30%] bg-white px-12 h-[50%] m-auto space-y-4 flex flex-col justify-center content-center">
+        <form className="rounded-lg w-[30%] bg-white px-12 h-[50%] m-auto space-y-4 flex flex-col justify-center content-center  p-10">
             <p className="font-semibold text-2xl">Welcome Back!</p>
             <p>Don't have a workspace? <a className="text-[#E4A400]">.</a></p>
             <InputComp title="Company name" inputType="text" />

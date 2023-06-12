@@ -17,7 +17,7 @@ const Logs = ({datetime, celcius, statusCode}) => {
             status = "Danger"
     }
     return(
-        <div className="bg-black text-white flex justify-between px-8 py-4" style={{borderBottom:"1px solid rgba(255, 255, 255, 0.1)"}} >
+        <div className="bg-black text-white flex justify-between px-8 py-4 font-['Fira_Mono']" style={{borderBottom:"1px solid rgba(255, 255, 255, 0.1)"}} >
             <p> {datetime} </p>
             <p> {celcius} <sup>o</sup> C </p>
             <p> {farenheight}  <sup>o</sup> F  </p>
