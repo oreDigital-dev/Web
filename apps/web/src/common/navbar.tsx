@@ -31,7 +31,7 @@ const navObs:{name:string, path:string}[] = [
     },
     {
         name:'request workspace',
-        path: '/companyDetails'
+        path: '/'
     }
     
 ]
