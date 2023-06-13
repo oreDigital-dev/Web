@@ -1,9 +1,9 @@
-import ButtonComp from "../src/screens/LoginComponents/buttonComp";
-import GeneralComp from "../src/screens/LoginComponents/generalComp";
-import InputComp from "../src/screens/LoginComponents/inputComp";
-import backgroundImage from "../assets/loginBg.png"
+import backgroundImage from "../../../assets/loginBg.png";
+import GeneralComp from "./generalComp";
+import InputComp from "./inputComp";
+import SmallBtnR from "./smallBtnR";
 
-const OpDetailsTwo = () => {
+const CompanyThree = ({ onNext }) => {
   const styles = {
     backgroundImage: `url(${backgroundImage.src})`,
     backgroundSize: "cover", // Optional: this will cover the entire width and height of the div
@@ -16,10 +16,10 @@ const OpDetailsTwo = () => {
       <InputComp title="Company CEO" inputType="text" />
       <InputComp title="Production capacity" inputType="number" />
       <InputComp title="Employee number" inputType="number" />
-      <ButtonComp text="Next" />
+      <SmallBtnR text="Submit" route="/" />
     </form>
     </div>
   );
 };
 
-export default OpDetailsTwo;
+export default CompanyThree;

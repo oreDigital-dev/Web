@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import backgroundImage from "../assets/loginBg.png";
-import ButtonComp from "../src/screens/LoginComponents/buttonComp";
 import InputComp from "../src/screens/LoginComponents/inputComp";
+import SmallBtnR from "../src/screens/LoginComponents/smallBtnR";
 const Login = () => {
   const styles = {
     backgroundImage: `url(${backgroundImage.src})`,
@@ -23,7 +23,7 @@ const Login = () => {
             <InputComp title="Company name" inputType="text" />
             <InputComp title="Email address" inputType="email" />
             <InputComp title="Password" inputType="password" />
-            <ButtonComp text="Login" />
+            <SmallBtnR text="Login" route="/" />
         </form>
       </div>
   );

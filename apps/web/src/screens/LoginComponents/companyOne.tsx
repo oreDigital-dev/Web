@@ -1,13 +1,20 @@
-import ButtonComp from "../src/screens/LoginComponents/buttonComp";
-import GeneralComp from "../src/screens/LoginComponents/generalComp";
-import InputComp from "../src/screens/LoginComponents/inputComp";
-import backgroundImage from "../assets/loginBg.png";
+// companyOne.jsx
+import React from 'react';
+import backgroundImage from "../../../assets/loginBg.png";
+import GeneralComp from "./generalComp";
+import InputComp from "./inputComp";
+import SmallBtnC from './smallBtnC';
 
-const CompanyDetails = () => {
+const CompanyOne = ({ onNext }) => {
+  const handleNextClick = () => {
+    onNext(); // Call the onNext function to trigger the next step
+  };
+
   const styles = {
     backgroundImage: `url(${backgroundImage.src})`,
-    backgroundSize: "cover", // Optional: this will cover the entire width and height of the div
+    backgroundSize: "cover",
   };
+
   return (
     <div
       className="w-screen h-screen flex flex-col justify-center content-center items-center"
@@ -19,10 +26,10 @@ const CompanyDetails = () => {
         <InputComp title="Email address" inputType="email" />
         <InputComp title="Headquarters location" inputType="text" />
         <InputComp title="Telephone number" inputType="text" />
-        <ButtonComp text="Next" />
+        <SmallBtnC text="Next" onNext={handleNextClick} />
       </form>
     </div>
   );
 };
 
-export default CompanyDetails;
+export default CompanyOne;
