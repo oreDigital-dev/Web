@@ -1,4 +1,4 @@
-import { CompanyI, CompanySiteI, OverallDataI } from "../@types"
+import { CompanyI, CompanySiteI, Log, OverallDataI } from "../@types"
 import Site1 from "../assets/mashyuzaSite.png";
 import Site2 from "../assets/gihangaSite.png";
 import Site3 from "../assets/kibitoki.png";
@@ -78,7 +78,41 @@ const overallData: OverallDataI[] = [
 ]
 
 
+const logs   : Log[] = [
+    {
+      air_pressure : 120 ,
+      illegal_motion: false ,
+      site_id : 22 , 
+      temperature : 20,
+      time : new Date(12,4,12,23,55,0,0)  
+    },
+    {
+      air_pressure : 200 ,
+      illegal_motion: true ,
+      site_id : 22 , 
+      temperature : 20,
+      time : new Date(12,4,12,23,55,0,0)  
+    },
+    {
+      air_pressure : 120 ,
+      illegal_motion: false ,
+      site_id : 22 , 
+      temperature : 20,
+      time : new Date(12,4,12,23,55,0,0)  
+    },
+    {
+      air_pressure : 200 ,
+      illegal_motion: true ,
+      site_id : 22 , 
+      temperature : 20,
+      time : new Date(12,4,12,23,55,0,0)  
+    },
+    
+]
+
+
 export default {
+    logs,
     companies,
         sites,
     overallData

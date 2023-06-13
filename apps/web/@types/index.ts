@@ -24,3 +24,12 @@ export interface OverallDataI {
     air_pressure: number,
     illegal_motion: boolean
 }
+
+
+export interface Log {
+    site_id : number ,
+    time : Date ,
+    temperature : number ,
+    air_pressure : number ,
+    illegal_motion : boolean,
+}

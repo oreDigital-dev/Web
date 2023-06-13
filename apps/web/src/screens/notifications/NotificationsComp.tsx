@@ -6,18 +6,50 @@ import Profile from "../../../assets/bts.png";
 import SiteComp from "./siteComponent";
 import Dropdown from "./dropdown";
 import Logs from "./logs";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Bell from "../../../assets/vectors/Vectorbell.svg";
 import Danger from "../../../assets/vectors/Vectordanger.svg";
-import { CompanyI } from "../../../@types";
+import { CompanyI, Log } from "../../../@types";
 import data from "../../../data/data";
 import CompanySiteDetails from "./companySiteDetails";
 
-const NotificationsComp = (company  : CompanyI) => {
+const NotificationsComp = (company: CompanyI) => {
 
   const date = "Mon 23 Jan 2023 11:00 AM";
   const sites = data.sites.filter(site => site.company_id === company.id)
-  const[selectedSite,setSelectedSite] = useState(sites[0].id)
+  const [selectedSite, setSelectedSite] = useState(sites[0].id)
+  const [selectedAttribute, setSelectedAttribute] = useState<'atmosphere' | 'temperature' | 'illegal_motion'>('temperature')
+
+
+  const [logs, setLogs] = useState<Log[]>([])
+
+  const updateLogs=()=>{
+    const  newLog : Log = {
+      site_id: 22,
+      air_pressure: Math.floor(Math.random() * 10000 - 9000),
+      time: new Date(Date.now()),
+      temperature: Math.ceil(Math.random()*100 - 20),
+      illegal_motion: Math.random() > 0.5 ? true : false
+    }
+
+    setLogs((prevLogs)=>{
+      // console.log(prevLogs);
+      return [...prevLogs, newLog]
+    });
+  }
+
+  useEffect(() => {
+
+    const interval= setInterval(() => {
+      updateLogs()
+    }
+    , 2000);
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [])
+
 
   return (
     <div className="flex h-[100vh]  bg-slate-50">
@@ -49,7 +81,7 @@ const NotificationsComp = (company  : CompanyI) => {
             <div className="flex justify-between">
 
               {
-                sites.map((site,index) => <SiteComp isActive={selectedSite == site.id} data={site} onClick={() => setSelectedSite(site.id)} />  )
+                sites.map((site, index) => <SiteComp isActive={selectedSite == site.id} data={site} onClick={() => setSelectedSite(site.id)} />)
               }
             </div>
             <div className="flex justify-between items-center">
@@ -59,20 +91,15 @@ const NotificationsComp = (company  : CompanyI) => {
                 <Dropdown title="Latest logs" />
               </div>
             </div>
-            <div className="py-5 font-mono overflow-y-scroll bg-black p-10 rounded-lg max-h-[52vh] scrollable">
-              <Logs datetime={date} celcius={20} statusCode={1} />
-              <Logs datetime={date} celcius={20} statusCode={1} />
-              <Logs datetime={date} celcius={20} statusCode={2} />
-              <Logs datetime={date} celcius={20} statusCode={1} />
-              <Logs datetime={date} celcius={20} statusCode={3} />
-              <Logs datetime={date} celcius={20} statusCode={3} />
-              <Logs datetime={date} celcius={20} statusCode={3} />
-              <Logs datetime={date} celcius={20} statusCode={3} />
-              <Logs datetime={date} celcius={20} statusCode={1} />
+            <div className="py-5 font-mono overflow-y-scroll bg-black p-10 rounded-lg min-h-[52vh] max-h-[52vh] scrollable">
+              {
+                logs.map((log, i) => <Logs props={log} selected={selectedAttribute} />)
+                // data.logs.filter(log => log.site_id  == selectedSite).map((log,i) => <Logs props={log} selected={selectedAttribute} />)
+              }
             </div>
           </div>
           <div className="w-[30%]">
-            <CompanySiteDetails siteId={selectedSite}/>
+            <CompanySiteDetails siteId={selectedSite} />
           </div>
         </div>
         {/* <div className="border-t-[#E3E3E3] border-t py-2 h-[5.7%]">
