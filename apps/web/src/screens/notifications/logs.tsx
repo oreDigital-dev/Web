@@ -8,11 +8,11 @@ const Logs = ({ props, selected }: { props: Log, selected: 'atmosphere' | 'tempe
     let status = ""
     let color = ""
     const statusCode = props.temperature > 30 ? 3 : props.temperature > 20 ? 2 : 1;
-    if (statusCode == 1) {
-        new Notification(`⚠️ Temperature rize at ${data.sites.find(site => site.id == props.site_id)?.name}`, {
-            data: `Temperature rize at ${data.sites.find(site => site.id == props.site_id)?.name} to ${props.temperature}°C`
-        })
-    }
+    // if (statusCode == 1) {
+    //     new Notification(`⚠️ Temperature rize at ${data.sites.find(site => site.id == props.site_id)?.name}`, {
+    //         data: `Temperature rize at ${data.sites.find(site => site.id == props.site_id)?.name} to ${props.temperature}°C`
+    //     })
+    // }
     switch (statusCode) {
         case 1:
             color = "#00B860"
