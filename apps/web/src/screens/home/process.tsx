@@ -8,13 +8,13 @@ const Process = () => {
       className="bg-process bg-center w-full flex flex-col space-y-20"
       // style={{ backgroundImage: "url('../../../assets/process.png')" }}
     >
-      <div className="w-[30%] text-center mx-auto mt-[12rem]">
+      <div className="md:w-[50%] lg:w-[30%] text-center mx-auto mt-[12rem]">
         <p className="font-semibold text-3xl">The Process</p>
         <p className="text-[#3F3F3F]"> {text} </p>
       </div>
 
-      <div className="flex justify-between mx-32">
-        <ProcessComp number={1} title="Request a workspace" content={text} />
+      <div className="md:flex md:space-x-8 md:space-y-0 space-y-12 justify-between mx-12 md:mx-12">
+        <ProcessComp number={1} title="Request  workspace" content={text} />
         <ProcessComp number={2} title="Installation step" content={text} />
         <ProcessComp number={3} title="Lifetime security" content={text} />
       </div>

@@ -26,7 +26,7 @@ export default function Impact() {
             <p className="text-6xl text-center font-bold ">Our Impact  </p>
             <p className="text-slate-300 my-6 text-center">Here’s  the services that we offer to you, to ensure both your company’s
                 products and employees security</p>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="md:grid md:grid-cols-3 md:gap-10 md:space-y-0 space-y-20">
                 {
                     data.map((datum, index) => (
                         <ImpactCard key={index} {...datum} />

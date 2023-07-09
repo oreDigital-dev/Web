@@ -3,12 +3,12 @@ import backgroundImage from "../../../assets/loginBg.png";
 
 const GeneralComp = ({ number, title }) => {
   return (
-    <div className="flex flex-col justify-center contents-center items-center">
-      <div>
-        <span className="text-white text-bold text-center py-1 px-3 rounded-full bg-[#FFBC10] mr-4">
+    <div className="flex flex-col md:justify-center md:contents-center md:items-center">
+      <div className="flex">
+        <div className="text-white text-bold text-center flex justify-center items-center h-8 w-8 rounded-full bg-[#FFBC10] mr-4">
           {number}
-        </span>
-        <span className="font-bold text-xl">{title}</span>
+        </div>
+        <div className="font-bold text-xl">{title}</div>
       </div>
 
       <p className="mt-3">

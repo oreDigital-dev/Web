@@ -3,11 +3,14 @@ import WhiteLogo from "../../assets/vectors/LogoWhiteLogo.svg";
 import Facebook from "../../assets/vectors/Vectorfb.svg";
 import Twitter from "../../assets/vectors/Vectortwitter.svg";
 import Linkedin from "../../assets/vectors/Vectorin.svg";
+import BlackLogo from "../../assets/vectors/LogoBlackLogo.svg"
+
 const Footer = () => {
   return (
-    <div className="bg-[#241D1D] text-white flex px-32 justify-between pt-8 pb-20 relative bottom-0 w-full ">
-      <div className="w-[20%]">
-        <img src={WhiteLogo.src} alt="" />
+    <div className="md:bg-[#241D1D] md:text-white md:flex md:px-32 sm:px-12 justify-between pt-8 pb-20 relative bottom-0 w-full ">
+      <div className="md:w-[20%] sm:w-[40%]">
+        <img src={WhiteLogo.src} alt="" className="sm:hidden" />
+        <img src={BlackLogo.src} alt="" className="md:hidden" />
         <p className="mt-8 mb-5">Beware of risk, increase security and productivity</p>
         <div className="flex gap-4">
           <a href="#">

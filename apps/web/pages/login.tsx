@@ -9,7 +9,7 @@ const Login = () => {
   };
 
   return (
-    <div className=" h-screen w-screen flex px-32" style={styles}>
+    <div className=" h-screen w-screen flex flex-col md:flex-row items-center justify-center content-center" style={styles}>
         <div className="text-white space-y-4 m-auto">
           <p className="font-[800px] text-5xl w-[50%]">Login to your account</p>
           <p className=" w-[65%]">

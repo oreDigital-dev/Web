@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ServiceComp from "./components/serviceComp";
 import IncidentOne from "../../../assets/incident1.jpg";
 import IncidentTwo from "../../../assets/incident2.jpg";
@@ -13,13 +14,13 @@ const Services = () => {
   const paragraph =
     "Here's the services that we offer to you, to ensure both your company's products and employees security";
   return (
-    <div className="px-32 flex flex-col">
-      <div className="m-auto flex flex-col items-center w-[32%]">
+    <div className="mt-[20rem] px-4 md:px-12 flex flex-col sm:mt-[20rem] items-center justify-center">
+      <div className="m-auto flex flex-col items-center md:w-[65%] lg:w-[30%]">
         <p className="font-[700] text-4xl">Our Services</p>
         <p className="text-center">{paragraph}</p>
       </div>
 
-      <div className="flex justify-between gap-24 mt-12">
+      <div className="md:flex md:space-x-5 justify-between mt-12 space-y-12 md:space-y-0">
         <ServiceComp
           image={IncidentOne.src}
           title={header}
@@ -36,21 +37,49 @@ const Services = () => {
           content={paragraph}
         />
       </div>
-      <div className="flex justify-between items-center mt-[8rem] mr-32">
-          <Image src={Service1.src} alt="Telescope" height={500} width={600} className="w-1/2 object-cover rounded-lg" />
-          <InstallComp
-            title="We install high sensitivity tools at the mining site"
-            content={paragraph}
+
+      <div className="md:flex mt-[8rem] items-center justify-between hidden">
+        {/* large screens */}
+
+          <img
+            src={Service1.src}
+            alt="Telescope"
+            className="w-full md:w-[45%] object-cover rounded-lg mx-auto md:mx-0"
+
           />
-        </div>
-        <div className="flex justify-between items-center ml-32">
+
         <InstallComp
-            title="Every employee is now secure from calamities"
-            content={paragraph}
+          title="We install high sensitivity tools at the mining site"
+          content={paragraph}
+        />
+      </div>
+
+      {/* small screens */}
+      <div className="mt-[8rem] md:hidden space-y-5">
+        <InstallComp
+          title="We install high sensitivity tools at the mining site"
+          content={paragraph}
+        />
+          <img
+            src={Service1.src}
+            alt="Telescope"
+            className="w-full md:w-[45%] object-cover rounded-lg mx-auto md:mx-0"
           />
-          <Image src={Service2.src} alt="Mine site" height={500} width={600} className="w-1/2 object-cover rounded-lg" />
-          
-        </div>
+
+      </div>
+
+      {/* large screens */}
+      <div className="md:flex justify-between mt-[5rem] items-center md:space-y-0 space-y-5">
+        <InstallComp
+          title="Every employee is now secure from calamities"
+          content={paragraph}
+        />
+          <img
+            src={Service2.src}
+            alt="Mine site"
+            className="w-full md:w-[45%] object-cover rounded-lg mx-auto md:mx-0"
+          />
+      </div>
     </div>
   );
 };

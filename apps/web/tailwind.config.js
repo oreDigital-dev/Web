@@ -1,3 +1,4 @@
+const defaultTheme  = require('tailwindcss/defaultTheme')
 module.exports = {
     content: [
         "../../packages/ui/**/*.{js,ts,jsx,tsx}",
@@ -11,8 +12,12 @@ module.exports = {
                 "brand": "#EFD183",
                 "process": "rgba(202, 255, 160, 0.05)",
                 "team" : "rgba(0, 0, 0, 0.01)"
-            }
+            },  
         },
+        screens : {
+                'msm' : '0px',
+                ...defaultTheme.screens
+            }
     },
     plugins: [],
 };

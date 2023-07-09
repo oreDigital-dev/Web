@@ -11,7 +11,7 @@ const CompanyDetails = () => {
   };
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center content-center items-center">
+    <div className="w-screen h-screen flex flex-col md:justify-center md:content-center md:items-center">
       {currentStep === 1 && <CompanyOne onNext={handleNextButtonClick} />}
       {currentStep === 2 && <CompanyTwo onNext={handleNextButtonClick} />}
       {currentStep === 3 && <CompanyThree onNext={handleNextButtonClick} />}

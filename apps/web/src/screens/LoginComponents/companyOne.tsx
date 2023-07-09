@@ -17,10 +17,10 @@ const CompanyOne = ({ onNext }) => {
 
   return (
     <div
-      className="w-screen h-screen flex flex-col justify-center content-center items-center"
+      className="w-screen h-screen flex flex-col justify-center md:content-center md:items-center"
       style={styles}
     >
-      <form className="rounded-lg w-[30%] bg-white space-y-4 flex flex-col justify-center content-center py-20 px-12">
+      <form className="rounded-lg w-full md:w-[50%] lg:w-[35%] bg-white space-y-4 flex flex-col md:justify-center md:content-center py-20 px-12">
         <GeneralComp number={1} title="Company Details" />
         <InputComp title="Company name" inputType="text" />
         <InputComp title="Email address" inputType="email" />

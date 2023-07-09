@@ -12,8 +12,9 @@ const data =  new Array(5).fill(
 export default function AboutUs() {
     return (
         <div className="px-[5vw]  py-48 bg-gradient-to-b from-P-50  to-yellow-0">
-            <p className="text-6xl  font-extrabold ">What they talk about us  </p>
-            <p className="text-slate-300 my-6 ">Here’s  the services that we offer to you, to ensure both your company’s
+            <p className="text-6xl  font-extrabold sm:hidden">What they talk about us  </p>
+            <p className="text-6xl  font-extrabold md:hidden">Reviews  </p>
+            <p className="text-slate-600 my-6 ">Here’s  the services that we offer to you, to ensure both your company’s
                 products and employees security</p>
             <div className="flex items-start gap-10 overflow-x-hidden hover:overflow-x-scroll scroll-smooth scrollable">
                 {

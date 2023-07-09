@@ -13,7 +13,7 @@ const CompanyTwo = ({ onNext }) => {
   };
   return (
     <div className="w-screen h-screen flex flex-col justify-center content-center items-center" style={styles}>
-      <form className="rounded-lg w-[30%] bg-white space-y-4 flex flex-col justify-center content-center py-20 px-12">
+      <form className="rounded-lg  w-full md:w-[50%] lg:w-[30%] bg-white space-y-4 flex flex-col justify-center content-center py-20 px-12">
         <GeneralComp number={2} title="Operational details" />
         <InputComp title="Mining licence number" inputType="number" />
         <InputComp title="Type of mineral" inputType="text" />
