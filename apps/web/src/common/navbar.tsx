@@ -31,7 +31,7 @@ const navObs: { name: string; path: string }[] = [
   },
   {
     name: "request workspace",
-    path: "/request_workspace",
+    path: "https://app-oredigital.vercel.app/create-workspace",
   },
 ];
 export default function Navbar() {
