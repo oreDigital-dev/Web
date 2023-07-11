@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <div>
       <div
-        className="h-[100vh] bg-black-40  pt-52 bg-cover bg-no-repeat relative bg-black/90 hidden md:block"
+        className="h-[100vh] bg-black-40  pt-52 bg-cover bg-no-repeat top-0 relative bg-black/90 hidden md:block"
         style={{ backgroundImage: `url(${HeroBg.src})` }}
       >
         <h1 className="text-6xl text-center text-white font-extrabold ">
@@ -27,9 +27,9 @@ export default function Hero() {
               id=""
               placeholder="Company email address"
             />
-            <Link href={"/companyDetails"}>
+            <a href={"https://app-oredigital.vercel.app/create-workspace"}>
               <Button text="Request workspace" />
-            </Link>
+            </a>
           </div>
           <button className="text-black hover:opacity-90 py-3 px-10 rounded-full bg-white ">
             Watch&nbsp;demo
